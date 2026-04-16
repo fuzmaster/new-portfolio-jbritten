@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="100%" style="background-color: #0B0D14; font-family: 'SF Mono', Menlo, Consolas, monospace;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00E5FF" />
+    </marker>
+    
+    <linearGradient id="box-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.06)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.01)" />
+    </linearGradient>
+  </defs>
+
+  <line x1="190" y1="100" x2="202" y2="100" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="390" y1="100" x2="402" y2="100" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="590" y1="100" x2="602" y2="100" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="790" y1="100" x2="802" y2="100" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrow)" />
+
+  <rect x="10" y="60" width="180" height="80" rx="8" fill="url(#box-bg)" stroke="#00E5FF" stroke-width="1.5" />
+  <rect x="210" y="60" width="180" height="80" rx="8" fill="url(#box-bg)" stroke="#00E5FF" stroke-width="1.5" />
+  <rect x="410" y="60" width="180" height="80" rx="8" fill="url(#box-bg)" stroke="#00E5FF" stroke-width="1.5" />
+  <rect x="610" y="60" width="180" height="80" rx="8" fill="url(#box-bg)" stroke="#00E5FF" stroke-width="1.5" />
+  <rect x="810" y="60" width="180" height="80" rx="8" fill="url(#box-bg)" stroke="#00E5FF" stroke-width="1.5" />
+
+  <text x="100" y="92" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">[SOURCE]</text>
+  <text x="100" y="116" fill="#FFFFFF" font-size="13" text-anchor="middle">RAW AUDIO</text>
+
+  <text x="300" y="92" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">[NotebookLM]</text>
+  <text x="300" y="116" fill="#FFFFFF" font-size="13" text-anchor="middle">Data Ingestion</text>
+
+  <text x="500" y="92" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">[Gemini]</text>
+  <text x="500" y="116" fill="#FFFFFF" font-size="13" text-anchor="middle">Editorial Critic</text>
+
+  <text x="700" y="92" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">[Claude]</text>
+  <text x="700" y="116" fill="#FFFFFF" font-size="13" text-anchor="middle">Social Copy</text>
+
+  <text x="900" y="92" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">[ChatGPT]</text>
+  <text x="900" y="116" fill="#FFFFFF" font-size="13" text-anchor="middle">Final Packaging</text>
+</svg>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Britten | Content Systems &amp; AI Pipelines</title>
+
+    <!-- Fonts: distinctive pair, NOT Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="description" content="Jacob Britten — I build automated content pipelines, React/Remotion video tools, and AI workflows that save teams time and money. MBA & M.Tech." />
+    <meta property="og:title" content="Jacob Britten | Content Systems & AI Pipelines" />
+    <meta property="og:description" content="I build the tools, code, and AI workflows that handle the heavy lifting — so your team can focus on making good content." />
+    <meta property="og:image" content="images/notion-pipeline.png" />
+    <meta property="og:url" content="https://jacobbritten.com" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300FFC8' width='100' height='100' rx='16'/><text x='50' y='54' font-size='58' fill='%230B0D14' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>J</text></svg>" />
+  </head>
+  <body class="brutalist-lite">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ── NAVIGATION ── -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">JACOB BRITTEN</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#work-preview">Work</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="#metrics">Metrics</a></li>
+          <li><a href="#infrastructure">Stack</a></li>
+          <li><a href="#profile">About</a></li>
+          <li><a href="#consult">Contact</a></li>
+          <li><a class="btn resume-btn" href="Resume.pdf" download>Resume</a></li>
+        </ul>
+        <button type="button" class="menu-toggle" id="menu-toggle"
+                aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <!-- §1 HERO -->
+      <section class="hero">
+        <div class="hero-bg" style="background-image:url('images/notion-pipeline.png')"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+          <div class="eyebrow-wrap" data-animate>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="eyebrow-text">system_status: active | ops_director: jacob_britten<span class="cursor" aria-hidden="true">_</span></span>
+          </div>
+
+          <h1 class="hero-title" data-animate data-delay="1">Content pipelines <span class="accent">that run themselves.</span></h1>
+
+          <p class="hero-subtitle" data-animate data-delay="2">I build the tools, code, and AI workflows that handle the heavy lifting — so your team can actually focus on making good content.</p>
+
+          <!-- Simplified hero visual — single strong image, no complex grid -->
+          <div class="video-outer" data-animate data-delay="3">
+            <div class="video-glow" aria-hidden="true"></div>
+            <div class="video-wrap">
+              <span class="v-corner v-tl" aria-hidden="true"></span>
+              <span class="v-corner v-tr" aria-hidden="true"></span>
+              <span class="v-corner v-bl" aria-hidden="true"></span>
+              <span class="v-corner v-br" aria-hidden="true"></span>
+              <video
+                class="hero-showcase-img"
+                src="video/showreel.mp4"
+                autoplay muted loop playsinline
+                aria-label="Showreel: content pipelines, React/Remotion builds, and AI workflow demos"
+              ></video>
+              <div class="video-hud" aria-hidden="true">
+                <span>REACT / REMOTION / AI_WORKFLOWS / AUTOMATION</span>
+                <a href="work.html" class="hud-cta">VIEW CASE STUDIES ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span class="scroll-label">SCROLL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- §2 CASE STUDIES PREVIEW -->
+      <section class="cases-preview" id="work-preview" aria-label="Case studies preview">
+        <div class="container">
+          <div class="section-label section-label--tight">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>the_architecture // case_studies</span>
+          </div>
+          <h2 class="section-headline" data-inview>
+            WHAT I<br><span class="headline-dim">BUILD.</span>
+          </h2>
+          <div class="cases-grid">
+
+            <!-- Case 1: AI Pipeline -->
+            <article class="card card--case" data-inview>
+              <!--
+                IMAGE: notion-pipeline.png (same file, browser-cached from hero)
+                Lazy-loaded here since hero loads it eagerly.
+              -->
+                  <img src="images/notion-pipeline.png" alt="Detailed Notion pipeline map with AI prompt stages"
+                   class="card__image" width="1200" height="936" loading="lazy" />
+              <div class="card__body">
+                <p class="infra-tag">// ai_pipeline</p>
+                <h3 class="card__title">AI Prompt Pipeline for Podcast Distribution</h3>
+                <a href="work.html#ai-pipeline" class="hud-cta">VIEW CASE STUDY ↗</a>
+              </div>
+            </article>
+
+            <!-- Case 2: Remotion Generator -->
+            <article class="card card--case" data-inview>
+              <!--
+                IMAGE: remotion-code.png
+                Shows React/Remotion source code with timeline logic.
+              -->
+                  <img src="images/remotion-code.png" alt="Source code for a React and Remotion video generator"
+                   class="card__image" width="1200" height="834" loading="lazy" />
+              <div class="card__body">
+                <p class="infra-tag">// remotion_generator</p>
+                <h3 class="card__title">Code-First Video Generator (React + Remotion)</h3>
+                <a href="work.html#remotion" class="hud-cta">VIEW CASE STUDY ↗</a>
+              </div>
+            </article>
+
+            <!-- Case 3: SRT Parser -->
+            <article class="card card--case" data-inview>
+              <!--
+                IMAGE: srt-tests.png
+                Shows terminal test suite output.
+              -->
+                  <img src="images/srt-tests.png" alt="Terminal test suite output showing 65 passing subtitle parser tests"
+                   class="card__image" width="1200" height="877" loading="lazy" />
+              <div class="card__body">
+                <p class="infra-tag">// srt_parser</p>
+                <h3 class="card__title">SRT Parser — 65 Tests, Zero Manual Editing</h3>
+                <a href="work.html#srt-parser" class="hud-cta">VIEW CASE STUDY ↗</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- §3 METRICS BENTO -->
+      <section class="metrics-section" id="metrics" aria-label="Performance metrics">
+        <div class="container">
+          <div class="section-label">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>the_numbers // real_results</span>
+          </div>
+
+          <div class="bento-grid">
+            <div class="bento-card bento-card--hero" data-inview>
+              <span class="b-corner b-tl" aria-hidden="true"></span>
+              <span class="b-corner b-tr" aria-hidden="true"></span>
+              <p class="bento-label">Subscribers Scaled</p>
+              <p class="bento-value">100K+</p>
+              <p class="bento-caption">High Functioning Podcast — 400% YoY Growth via Automated Reels.</p>
+              <div class="bento-bar" aria-hidden="true"></div>
+            </div>
+            <div class="bento-card" data-inview>
+              <span class="b-corner b-tl" aria-hidden="true"></span>
+              <span class="b-corner b-tr" aria-hidden="true"></span>
+              <p class="bento-label">Faster Post-Production</p>
+              <p class="bento-value">40%</p>
+              <div class="bento-bar" aria-hidden="true"></div>
+            </div>
+            <div class="bento-card" data-inview>
+              <span class="b-corner b-tl" aria-hidden="true"></span>
+              <span class="b-corner b-tr" aria-hidden="true"></span>
+              <p class="bento-label">Full Episodes Produced &amp; Shipped</p>
+              <p class="bento-value">50+</p>
+              <div class="bento-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="stat-bar" data-inview>
+            <div class="stat-item">
+              <p class="stat-value">MBA</p>
+              <p class="stat-label">Graduate Business</p>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <p class="stat-value">M.Tech</p>
+              <p class="stat-label">Digital Media</p>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <p class="stat-value">Pt.107</p>
+              <p class="stat-label">FAA Commercial UAV</p>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <p class="stat-value">8+</p>
+              <p class="stat-label">Years in Production Ops</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- §4 INFRASTRUCTURE -->
+      <section class="infra-section" id="infrastructure" aria-label="Infrastructure stack">
+        <div class="container">
+          <div class="section-label">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>infrastructure_stack // what_i_build</span>
+          </div>
+
+          <h2 class="section-headline" data-inview>
+            HOW I<br>
+            <span class="headline-dim">WORK.</span>
+          </h2>
+
+          <!-- Row 1 -->
+          <div class="infra-row" data-inview>
+            <span class="pipeline-counter" aria-hidden="true">01</span>
+            <div class="infra-text">
+              <p class="infra-tag">// broadcast_infrastructure</p>
+              <h3 class="infra-heading">Live Broadcast Production</h3>
+              <p class="infra-body">
+                I set up and run multi-camera live shows on Blackmagic gear. I handle the switching,
+                the signal routing, and the redundancy so nothing drops during a live stream. One show
+                I built from scratch now reaches 11,000+ viewers per episode.
+              </p>
+              <ul class="spec-tags">
+                <li>Blackmagic ATEM</li>
+                <li>DaVinci Resolve</li>
+                <li>Multi-cam Logic</li>
+                <li>SDI / HDMI Signal Chain</li>
+              </ul>
+            </div>
+            <div class="infra-image-wrap">
+              <!--
+                IMAGE: Extra/Camera1.jpg
+                Real photo of Blackmagic studio camera in broadcast environment.
+              -->
+                  <img src="images/Extra/Camera1.jpg"
+                   alt="Blackmagic studio camera rig in live broadcast environment"
+                   loading="lazy" class="infra-photo" width="1200" height="900" />
+              <span class="infra-image-label">BROADCAST_RIG.001</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="infra-row infra-row--reverse" data-inview>
+            <span class="pipeline-counter" aria-hidden="true">02</span>
+            <div class="infra-image-wrap infra-image-wrap--svg">
+              <!--
+                IMAGE: youtube-growth.svg
+                Clean vector chart showing 100K+ subs and 12.6K weekly views.
+                Should be hand-crafted SVG with the --cyan accent color.
+              -->
+              <img src="images/youtube-growth.svg"
+                   alt="YouTube analytics showing 100K+ subscribers and 12.6K weekly views from automated content pipeline"
+                   loading="lazy" class="infra-photo infra-photo--svg" width="800" height="400" />
+              <span class="infra-image-label">PIPELINE_OUTPUT.002</span>
+            </div>
+            <div class="infra-text">
+              <p class="infra-tag">// programmatic_post</p>
+              <h3 class="infra-heading">Code-First Video Pipelines</h3>
+              <p class="infra-body">
+                I write React and Remotion code that turns raw data into finished videos automatically.
+                No more dragging clips around in After Effects. Feed it a transcript and a JSON config,
+                and it spits out a full social media kit. Cut post-production time by 40%.
+              </p>
+              <ul class="spec-tags">
+                <li>React / Remotion</li>
+                <li>After Effects Automation</li>
+                <li>JSON Data Schemas</li>
+                <li>FFmpeg Pipelines</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="infra-row" data-inview>
+            <span class="pipeline-counter" aria-hidden="true">03</span>
+            <div class="infra-text">
+              <p class="infra-tag">// ai_automation</p>
+              <h3 class="infra-heading">AI Prompt Chains</h3>
+              <p class="infra-body">
+                I run raw audio through a multi-model pipeline — NotebookLM for data ingestion,
+                Gemini for editorial critique, Claude for social copy, ChatGPT for final packaging.
+                The output is a full distribution kit: SEO descriptions, chapter markers, social posts,
+                and Remotion data files. No manual writing.
+              </p>
+              <ul class="spec-tags">
+                <li>Multi-Model LLM Architecture</li>
+                <li>Claude / Gemini / ChatGPT</li>
+                <li>Automated Social Kits</li>
+                <li>Zero Manual Copy</li>
+              </ul>
+            </div>
+            <div class="infra-image-wrap infra-image-wrap--svg">
+              <!--
+                IMAGE: ai-pipeline.svg
+                Vector diagram: NotebookLM → Gemini → Claude → ChatGPT flow.
+                Clean, minimal, uses --cyan for connectors.
+              -->
+              <img src="images/ai-pipeline.svg"
+                   alt="Multi-model AI prompt pipeline: NotebookLM to Gemini to Claude to ChatGPT"
+                   loading="lazy" class="infra-photo infra-photo--svg" width="1000" height="200" />
+              <span class="infra-image-label">AI_PIPELINE.003</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- §5 ENDORSEMENTS -->
+      <section class="endorsements-section section-padding" aria-label="Executive endorsements">
+        <div class="container">
+          <div class="section-label">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>what_people_say // endorsements</span>
+          </div>
+          <h2 class="section-headline" data-inview>PEOPLE I'VE <span class="accent">WORKED WITH</span></h2>
+          <div class="value-cards">
+            <div class="card testimonial-card" data-inview>
+              <p class="testimonial-quote">"Jacob has a passion for making projects seamless and creating workflows to make everyone's lives easier. He handles large amounts of projects at once with ease and can easily take on new tasks."</p>
+              <h3 class="testimonial-name">Brandon Farrell</h3>
+              <p class="testimonial-title">Videographer, Lamacchia Realty</p>
+            </div>
+            <div class="card testimonial-card" data-inview>
+              <p class="testimonial-quote">"He works so quickly and adds his own touch to his work — not only do you get it done fast, you also get it done better than you could have imagined."</p>
+              <h3 class="testimonial-name">Lindsay Favazza</h3>
+              <p class="testimonial-title">VP of Marketing, Lamacchia Realty</p>
+            </div>
+            <div class="card testimonial-card" data-inview>
+              <p class="testimonial-quote">"Jacob is an accomplished video editor and drone pilot. He recently did a drone shoot for one of my listings and did a fabulous job without any direction. Highly recommended."</p>
+              <h3 class="testimonial-name">Gary Kelley</h3>
+              <p class="testimonial-title">Broker/Owner, Residential Real Estate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- §6 PROFILE -->
+      <section id="profile" class="section-padding" aria-label="Director profile">
+        <div class="container split-layout">
+          <div class="profile-image" data-inview>
+            <!--
+              IMAGE: Profile.jpg
+              Profile image for the About section.
+            -->
+            <img src="images/Profile.jpg"
+              alt="Jacob Britten — content systems architect and media operations director"
+              class="headshot" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="profile-text" data-inview>
+            <div class="section-label section-label--snug">
+              <span class="label-line" aria-hidden="true"></span>
+              <span>director_profile // jacob_britten</span>
+            </div>
+            <h2>STARTED AS A CREATOR.<br><span class="accent">NOW I BUILD THE TOOLS.</span></h2>
+            <p>
+              I spent years shooting, editing, and producing content for real estate brokerages
+              and media companies. Somewhere along the way I realized the real bottleneck was
+              never the creative work — it was the lack of systems behind it.
+            </p>
+            <p>
+              Now I write code (React, Remotion, Node), design AI workflows, and build the
+              automated pipelines that let small teams ship like big ones. I have an MBA and
+              a Master's in Digital Media, but what matters more is that I actually build things.
+            </p>
+            <div class="tech-stack">
+              <h3>WHAT I USE:</h3>
+              <ul>
+                <li>React / Remotion / TypeScript</li>
+                <li>AI Prompt Chains &amp; LLM Workflows</li>
+                <li>Node.js / FFmpeg / CLI Tooling</li>
+                <li>Blackmagic ATEM &amp; Live Production</li>
+                <li>Adobe Premiere / After Effects / Lightroom</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- §7 CTA -->
+      <section id="consult" class="executive-brief" aria-label="Contact">
+        <div class="container">
+          <div class="brief-divider" aria-hidden="true"></div>
+          <div class="section-label">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>executive_brief // credentials_and_contact</span>
+          </div>
+
+          <div class="brief-grid">
+            <div class="brief-left" data-inview>
+              <h2 class="brief-headline">
+                LET'S<br>
+                <span class="accent">BUILD</span><br>
+                SOMETHING.
+              </h2>
+              <p class="brief-body">
+                Eight years of production work, two grad degrees, and a growing stack of
+                tools I've built myself. If you need someone who can write the code, design
+                the workflow, and ship the content — I'm your guy.
+              </p>
+              <ul class="credential-list">
+                <li><span class="cred-icon" aria-hidden="true">◈</span>MBA — Business Strategy &amp; Operations</li>
+                <li><span class="cred-icon" aria-hidden="true">◈</span>M.Tech — Digital Media Systems</li>
+                <li><span class="cred-icon" aria-hidden="true">◈</span>FAA Part 107 — Commercial UAS</li>
+              </ul>
+            </div>
+
+            <div class="brief-right" data-inview>
+              <div class="cta-card">
+                <p class="cta-eyebrow">// open_to: full-time | contract | project-based</p>
+                <p class="cta-body-text">
+                  Got a content problem that needs a systems solution? Let's talk.
+                </p>
+                <div class="cta-actions">
+                  <a href="https://calendly.com/jacobbritten" target="_blank" rel="noopener noreferrer" class="btn cta-primary-btn">
+                    Book a call ↗
+                  </a>
+                  <div class="cta-secondary-links">
+                    <a href="https://www.linkedin.com/in/jacob-britten-a3b52026/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="social-icon-btn" aria-label="LinkedIn profile">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                      LinkedIn
+                    </a>
+                    <a href="mailto:jacob@jacobbritten.com"
+                       class="social-icon-btn" aria-label="Send email">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      Email
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="footer-id">jacob_britten — content_systems &amp; ai_pipelines</span>
+        </div>
+        <div class="footer-links">
+          <a href="lab.html" class="social-link">The Lab</a>
+          <a href="https://www.linkedin.com/in/jacob-britten-a3b52026/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <a href="https://www.instagram.com/jakefzbritten" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Jacob Britten. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

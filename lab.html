@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Lab | Jacob Britten</title>
+    <meta
+      name="description"
+      content="The Lab: practical builds from Jacob Britten, focused on shipping faster, catching bugs early, and reducing manual work."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300FFC8' width='100' height='100' rx='16'/><text x='50' y='54' font-size='58' fill='%230B0D14' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>J</text></svg>" />
+  </head>
+  <body class="lab-page brutalist-lite">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ── NAVIGATION ── -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">JACOB BRITTEN</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#work-preview">Work</a></li>
+          <li><a href="lab.html" class="active">Lab</a></li>
+          <li><a href="index.html#metrics">Metrics</a></li>
+          <li><a href="index.html#infrastructure">Stack</a></li>
+          <li><a href="index.html#profile">About</a></li>
+          <li><a href="index.html#consult">Contact</a></li>
+          <li><a class="btn resume-btn" href="Resume.pdf" download>Resume</a></li>
+        </ul>
+        <button type="button" class="menu-toggle" id="menu-toggle"
+                aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main" class="lab-main">
+      <section class="lab-shell">
+        <div class="container">
+          <a class="lab-back-link" href="index.html">&larr; Back to System Core</a>
+
+          <div class="section-label section-label--snug">
+            <span class="label-line" aria-hidden="true"></span>
+            <span>the_lab // systems_and_builds</span>
+          </div>
+
+          <h1 class="lab-title">I build tools that fix real workflow pain.</h1>
+
+          <p class="lab-intro">
+            I don't just sit and type syntax all day. I use AI models to draft, audit, and
+            stress-test my code. I act as the orchestrator — dropping isolated bots on different
+            parts of the stack to find pain points and edge cases before I ever hit deploy.
+          </p>
+
+          <section class="lab-grid" aria-label="Lab project cards">
+
+            <a href="https://github.com/fuzmaster/keep7" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">React / Algorithms / Logic</p>
+              <h2>Probability Simulator</h2>
+              <p>
+                Opening-hand math is annoying to do by feel. This client-side math lab runs
+                combinatorial analysis so players can stress-test deck consistency in seconds
+                instead of guessing their odds.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+            <a href="https://github.com/fuzmaster/MVP-Social-Chaos-Engine" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">WebSockets / Node.js / React</p>
+              <h2>Real-Time State Synchronizer</h2>
+              <p>
+                Teams were seeing stale states and delayed updates. This low-latency multiplayer
+                architecture handles concurrent user events and immediate game state reconciliation
+                without choking the network.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+            <a href="https://github.com/fuzmaster/srt-fixer" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">React / Vite / Regex</p>
+              <h2>Browser-Native Parser</h2>
+              <p>
+                Broken subtitle files were wasting edit time. This client-side tool ingests, cleans,
+                and normalizes broken SRT files instantly — fully local, no server queues.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+            <a href="https://github.com/fuzmaster/social-preview" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">Playwright / TypeScript / UI</p>
+              <h2>DOM Validation Dropzone</h2>
+              <p>
+                Social images looked fine in design tools but broke in real DOM layouts. This
+                automated testing environment validates image rendering and element visibility
+                across different viewport constraints.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+            <a href="https://github.com/fuzmaster/max-reels-project" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">Remotion / React / GSAP</p>
+              <h2>Programmatic Render Engine</h2>
+              <p>
+                A video automation pipeline that generates vertical reels directly from raw data
+                and audio files. Built to completely bypass the manual timeline editing process
+                in Premiere.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+            <a href="https://github.com/fuzmaster/highfunctioning-graphics" target="_blank" rel="noopener noreferrer" class="lab-card">
+              <p class="lab-card-tag">Remotion / TypeScript / React</p>
+              <h2>Broadcast Graphics API</h2>
+              <p>
+                A headless graphics generator that outputs transparent lower-thirds and
+                call-to-action cards for podcasts. Eliminates the need to wait on After Effects
+                renders entirely.
+              </p>
+              <span class="lab-card-link">
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Source
+              </span>
+            </a>
+
+          </section>
+
+          <div class="lab-footer-link-wrap">
+            <a class="lab-coffee-link" href="https://paypal.me/jakemaximus" target="_blank" rel="noopener noreferrer">[ &#9749; Support the Lab ]</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="footer-id">jacob_britten — content_systems &amp; ai_pipelines</span>
+        </div>
+        <div class="footer-links">
+          <a href="lab.html" class="social-link">The Lab</a>
+          <a href="https://www.linkedin.com/in/jacob-britten-a3b52026/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <a href="https://www.instagram.com/jakefzbritten" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Jacob Britten. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
