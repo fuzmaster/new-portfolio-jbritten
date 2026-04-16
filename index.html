@@ -45,38 +45,63 @@
     <main id="main">
 
       <!-- §1 HERO -->
-      <section class="hero">
-        <div class="hero-bg" style="background-image:url('images/notion-pipeline.png')"></div>
-        <div class="hero-overlay"></div>
-
+      <section class="hero hero-section">
         <div class="container hero-content">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div class="eyebrow-wrap" data-animate>
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="eyebrow-text">System Architecture</span>
+              </div>
 
-          <div class="eyebrow-wrap" data-animate>
-            <span class="status-dot" aria-hidden="true"></span>
-            <span class="eyebrow-text">System Architecture</span>
-          </div>
+              <h1 class="hero-title" data-animate data-delay="1">I build automated media infrastructure.</h1>
 
-          <h1 class="hero-title" data-animate data-delay="1">I build automated media infrastructure.</h1>
+              <p class="hero-subtitle" data-animate data-delay="2">I engineer Remotion and Node.js pipelines that ingest raw footage, apply programmatic edits, and render platform-ready video assets at scale. With a background in high-volume enterprise real estate media, I build the infrastructure that replaces manual editing.</p>
 
-          <p class="hero-subtitle" data-animate data-delay="2">I build Remotion/Node.js pipelines that ingest raw video, run programmatic edits, and output finished assets to social platforms, bypassing manual timeline editing.</p>
+              <div class="video-outer" data-animate data-delay="3">
+                <div class="video-glow" aria-hidden="true"></div>
+                <div class="video-wrap">
+                  <span class="v-corner v-tl" aria-hidden="true"></span>
+                  <span class="v-corner v-tr" aria-hidden="true"></span>
+                  <span class="v-corner v-bl" aria-hidden="true"></span>
+                  <span class="v-corner v-br" aria-hidden="true"></span>
+                  <video
+                    class="hero-showcase-img"
+                    src="video/showreel.mp4"
+                    autoplay muted loop playsinline
+                    aria-label="Showreel: content pipelines, React/Remotion builds, and AI workflow demos"
+                  ></video>
+                  <div class="video-hud" aria-hidden="true">
+                    <span>REACT / REMOTION / WORKFLOW AUTOMATION</span>
+                    <a href="work.html" class="hud-cta">VIEW CASE STUDIES ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <!-- Simplified hero visual — single strong image, no complex grid -->
-          <div class="video-outer" data-animate data-delay="3">
-            <div class="video-glow" aria-hidden="true"></div>
-            <div class="video-wrap">
-              <span class="v-corner v-tl" aria-hidden="true"></span>
-              <span class="v-corner v-tr" aria-hidden="true"></span>
-              <span class="v-corner v-bl" aria-hidden="true"></span>
-              <span class="v-corner v-br" aria-hidden="true"></span>
-              <video
-                class="hero-showcase-img"
-                src="video/showreel.mp4"
-                autoplay muted loop playsinline
-                aria-label="Showreel: content pipelines, React/Remotion builds, and AI workflow demos"
-              ></video>
-              <div class="video-hud" aria-hidden="true">
-                <span>REACT / REMOTION / WORKFLOW AUTOMATION</span>
-                <a href="work.html" class="hud-cta">VIEW CASE STUDIES ↗</a>
+            <div class="hero-right" data-animate data-delay="2">
+              <div class="hero-slideshow" aria-label="Featured project slideshow">
+                <figure class="hero-slide hero-slide-1">
+                  <img src="images/cropcheck-1.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="Crop Check UI" />
+                  <figcaption>
+                    <strong>Crop Check</strong>
+                    <span>Framed UI validation for social-safe crops and platform-ready previews.</span>
+                  </figcaption>
+                </figure>
+                <figure class="hero-slide hero-slide-2">
+                  <img src="images/instagram-420.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%;" alt="1.4M View Viral Reels" loading="lazy" />
+                  <figcaption>
+                    <strong>1.4M View Viral Reels</strong>
+                    <span>Performance-led creative proof pulled from real social distribution analytics.</span>
+                  </figcaption>
+                </figure>
+                <figure class="hero-slide hero-slide-3">
+                  <img src="images/youtube-analytics-422.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%;" alt="31K Views Analytics Spike" loading="lazy" />
+                  <figcaption>
+                    <strong>31K Views Analytics Spike</strong>
+                    <span>Code-built media systems tied to measurable audience lift and retention.</span>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
@@ -100,47 +125,42 @@
           </h2>
           <div class="cases-grid">
 
-            <!-- Case 1: AI Pipeline -->
-            <article class="card card--case" data-inview>
-              <!--
-                IMAGE: notion-pipeline.png (same file, browser-cached from hero)
-                Lazy-loaded here since hero loads it eagerly.
-              -->
-                  <img src="images/notion-pipeline.png" alt="Detailed Notion pipeline map with AI prompt stages"
-                   class="card__image" width="1200" height="936" loading="lazy" />
+            <article class="card card--case case-card--blueprint" data-inview>
+              <img src="images/remotion-schema.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="TypeScript Zod Schema Config" class="card__image" width="1200" height="936" loading="lazy" />
               <div class="card__body">
-                <p class="infra-tag">AI Pipeline Architecture</p>
-                <h3 class="card__title">AI Prompt Pipeline for Podcast Distribution</h3>
+                <p class="infra-tag">The Blueprint / Engine</p>
+                <h3 class="card__title">Schema-First Remotion Architecture</h3>
+                <p class="card__copy">Strict config contracts, typed scene inputs, and render-safe orchestration before a frame gets exported.</p>
                 <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
               </div>
             </article>
 
-            <!-- Case 2: Remotion Generator -->
-            <article class="card card--case" data-inview>
-              <!--
-                IMAGE: remotion-code.png
-                Shows React/Remotion source code with timeline logic.
-              -->
-                  <img src="images/remotion-code.png" alt="Source code for a React and Remotion video generator"
-                   class="card__image" width="1200" height="834" loading="lazy" />
+            <article class="card card--case case-card--logic" data-inview>
+              <img src="images/Genera-Reels.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="React Remotion Rendering Code" class="card__image" width="1200" height="834" loading="lazy" />
               <div class="card__body">
-                <p class="infra-tag">Remotion Render Engine</p>
-                <h3 class="card__title">Code-First Video Generator (React + Remotion)</h3>
+                <p class="infra-tag">The Logic</p>
+                <h3 class="card__title">Genera-Reels Rendering Pipeline</h3>
+                <p class="card__copy">React composition logic, timing systems, and reusable rendering blocks that turn structured data into repeatable output.</p>
                 <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
               </div>
             </article>
 
-            <!-- Case 3: SRT Parser -->
-            <article class="card card--case" data-inview>
-              <!--
-                IMAGE: srt-tests.png
-                Shows terminal test suite output.
-              -->
-                  <img src="images/srt-tests.png" alt="Terminal test suite output showing 65 passing subtitle parser tests"
-                   class="card__image" width="1200" height="877" loading="lazy" />
+            <article class="card card--case case-card--testing" data-inview>
+              <img src="images/youtube-retention-424.png" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%;" alt="YouTube Retention Graph" class="card__image" width="1200" height="877" loading="lazy" />
               <div class="card__body">
-                <p class="infra-tag">Data Validation and Parsing</p>
-                <h3 class="card__title">SRT Parser — 65 Tests, Zero Manual Editing</h3>
+                <p class="infra-tag">The Execution / Testing</p>
+                <h3 class="card__title">Retention and QA Signal</h3>
+                <p class="card__copy">Testing decisions against viewer behavior, validating what holds attention instead of guessing at pacing.</p>
+                <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
+              </div>
+            </article>
+
+            <article class="card card--case case-card--scale" data-inview>
+              <img src="images/youtube-analytics-422.png" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%;" alt="Analytics Spike" class="card__image" width="1200" height="877" loading="lazy" />
+              <div class="card__body">
+                <p class="infra-tag">The Scale / Metrics</p>
+                <h3 class="card__title">Audience Lift and Distribution Proof</h3>
+                <p class="card__copy">Analytics snapshots tied back to the systems layer: automation that produces measurable reach, throughput, and growth.</p>
                 <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
               </div>
             </article>
@@ -181,6 +201,49 @@
               <div class="bento-bar" aria-hidden="true"></div>
             </div>
           </div>
+
+          <section class="orchestration-layer" aria-label="The Orchestration Layer">
+            <h3 class="orchestration-title" data-inview>The Orchestration Layer</h3>
+            <div class="orchestration-grid">
+              <article class="orchestration-card" data-inview>
+                <div class="orchestration-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 6V12C5 13.6569 8.13401 15 12 15C15.866 15 19 13.6569 19 12V6" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 12V18C5 19.6569 8.13401 21 12 21C15.866 21 19 19.6569 19 18V12" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <h4>Data Extraction &amp; Logistics</h4>
+                <p>I bypass manual data entry by pushing raw transcripts and documentation through Google NotebookLM and Gemini 1.5 Pro. This extracts structured JSON data and identifies optimal cut points for video.</p>
+              </article>
+
+              <article class="orchestration-card" data-inview>
+                <div class="orchestration-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4C8.13401 4 5 7.13401 5 11V12.5C5 15.5376 6.93264 18.1237 9.63604 19.082" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M12 4C15.866 4 19 7.13401 19 11V12.5C19 15.5376 17.0674 18.1237 14.364 19.082" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M9 11.25C9 10.5596 9.55964 10 10.25 10C10.9404 10 11.5 10.5596 11.5 11.25C11.5 11.9404 10.9404 12.5 10.25 12.5C9.55964 12.5 9 11.9404 9 11.25Z" fill="currentColor"/>
+                    <path d="M12.5 11.25C12.5 10.5596 13.0596 10 13.75 10C14.4404 10 15 10.5596 15 11.25C15 11.9404 14.4404 12.5 13.75 12.5C13.0596 12.5 12.5 11.9404 12.5 11.25Z" fill="currentColor"/>
+                    <path d="M9 16.5C9.8 15.5 10.85 15 12 15C13.15 15 14.2 15.5 15 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h4>System Architecture (Notion)</h4>
+                <p>Chaos kills scale. Every automated pipeline begins as a strict relational database in Notion. I map out the exact data schemas, API routes, and timing logic before writing a single line of code.</p>
+              </article>
+
+              <article class="orchestration-card" data-inview>
+                <div class="orchestration-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 8L4 12L8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 8L20 12L16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 5L10 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h4>AI-Assisted Engineering</h4>
+                <p>I use LLMs as my compiler. By feeding my Notion schemas into Claude and Copilot, I rapidly prototype and deploy React and Remotion components. I act as the orchestrator, debugging the connective tissue and scaling the output.</p>
+              </article>
+            </div>
+          </section>
 
           <div class="stat-bar" data-inview>
             <div class="stat-item">
