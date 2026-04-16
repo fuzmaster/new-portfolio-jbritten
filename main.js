@@ -189,4 +189,56 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('Active nav highlight init failed:', err);
   }
 
+  // ─── HERO SLIDER ────────────────────────────────────
+  try {
+    const heroSlider = document.querySelector('.hero-slider');
+    if (heroSlider) {
+      const slides = heroSlider.querySelectorAll('.slide');
+      const dots = heroSlider.querySelectorAll('.dot');
+      const prevBtn = heroSlider.querySelector('.prev');
+      const nextBtn = heroSlider.querySelector('.next');
+      let currentSlide = 0;
+      let slideInterval;
+
+      const goToSlide = (index) => {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        currentSlide = (index + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      };
+
+      const nextSlide = () => goToSlide(currentSlide + 1);
+      const prevSlide = () => goToSlide(currentSlide - 1);
+
+      const resetInterval = () => {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+      };
+
+      if (nextBtn && prevBtn && slides.length && dots.length === slides.length) {
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          resetInterval();
+        });
+
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          resetInterval();
+        });
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => {
+            goToSlide(index);
+            resetInterval();
+          });
+        });
+
+        resetInterval();
+      }
+    }
+  } catch (err) {
+    console.warn('Hero slider init failed:', err);
+  }
+
 });

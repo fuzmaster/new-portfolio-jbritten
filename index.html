@@ -33,7 +33,7 @@
           <li><a href="#infrastructure">Stack</a></li>
           <li><a href="#profile">About</a></li>
           <li><a href="#consult">Contact</a></li>
-          <li><a class="btn resume-btn" href="Resume.pdf" download>Resume</a></li>
+          <li><a class="btn resume-btn" href="#profile">Resume</a></li>
         </ul>
         <button type="button" class="menu-toggle" id="menu-toggle"
                 aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,28 +80,25 @@
             </div>
 
             <div class="hero-right" data-animate data-delay="2">
-              <div class="hero-slideshow" aria-label="Featured project slideshow">
-                <figure class="hero-slide hero-slide-1">
-                  <img src="images/cropcheck-1.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="Crop Check UI" />
-                  <figcaption>
-                    <strong>Crop Check</strong>
-                    <span>Framed UI validation for social-safe crops and platform-ready previews.</span>
-                  </figcaption>
-                </figure>
-                <figure class="hero-slide hero-slide-2">
-                  <img src="images/instagram-420.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%;" alt="1.4M View Viral Reels" loading="lazy" />
-                  <figcaption>
-                    <strong>1.4M View Viral Reels</strong>
-                    <span>Performance-led creative proof pulled from real social distribution analytics.</span>
-                  </figcaption>
-                </figure>
-                <figure class="hero-slide hero-slide-3">
-                  <img src="images/youtube-analytics-422.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%;" alt="31K Views Analytics Spike" loading="lazy" />
-                  <figcaption>
-                    <strong>31K Views Analytics Spike</strong>
-                    <span>Code-built media systems tied to measurable audience lift and retention.</span>
-                  </figcaption>
-                </figure>
+              <div class="hero-slider" aria-label="Featured project slideshow">
+                <div class="slide active">
+                  <img src="images/cropcheck-1.jpg" alt="Crop Check UI" style="object-fit: cover; object-position: top center; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
+                </div>
+                <div class="slide">
+                  <img src="images/instagram-420.jpg" alt="Viral Reels 1.4M Views" style="object-fit: cover; object-position: 50% 65%; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
+                </div>
+                <div class="slide">
+                  <img src="images/youtube-analytics-422.jpg" alt="31K Views Analytics Spike" style="object-fit: cover; object-position: 50% 15%; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
+                </div>
+
+                <button class="slider-btn prev" aria-label="Previous image">❮</button>
+                <button class="slider-btn next" aria-label="Next image">❯</button>
+
+                <div class="slider-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -126,7 +123,7 @@
           <div class="cases-grid">
 
             <article class="card card--case case-card--blueprint" data-inview>
-              <img src="images/remotion-schema.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="TypeScript Zod Schema Config" class="card__image" width="1200" height="936" loading="lazy" />
+              <img src="images/remotion-schema.jpg" style="object-position: top left;" alt="TypeScript Zod Schema Config" loading="lazy">
               <div class="card__body">
                 <p class="infra-tag">The Blueprint / Engine</p>
                 <h3 class="card__title">Schema-First Remotion Architecture</h3>
@@ -136,7 +133,7 @@
             </article>
 
             <article class="card card--case case-card--logic" data-inview>
-              <img src="images/Genera-Reels.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="React Remotion Rendering Code" class="card__image" width="1200" height="834" loading="lazy" />
+              <img src="images/Genera-Reels.jpg" style="object-position: top left;" alt="React Remotion Rendering Code" loading="lazy">
               <div class="card__body">
                 <p class="infra-tag">The Logic</p>
                 <h3 class="card__title">Genera-Reels Rendering Pipeline</h3>
@@ -146,7 +143,7 @@
             </article>
 
             <article class="card card--case case-card--testing" data-inview>
-              <img src="images/youtube-retention-424.png" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%;" alt="YouTube Retention Graph" class="card__image" width="1200" height="877" loading="lazy" />
+              <img src="images/youtube-retention-424.jpg" style="object-position: center;" alt="YouTube Retention Graph" loading="lazy">
               <div class="card__body">
                 <p class="infra-tag">The Execution / Testing</p>
                 <h3 class="card__title">Retention and QA Signal</h3>
@@ -156,7 +153,7 @@
             </article>
 
             <article class="card card--case case-card--scale" data-inview>
-              <img src="images/youtube-analytics-422.png" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%;" alt="Analytics Spike" class="card__image" width="1200" height="877" loading="lazy" />
+              <img src="images/youtube-analytics-422.jpg" style="object-position: 50% 15%;" alt="Analytics Spike" loading="lazy">
               <div class="card__body">
                 <p class="infra-tag">The Scale / Metrics</p>
                 <h3 class="card__title">Audience Lift and Distribution Proof</h3>
@@ -183,7 +180,7 @@
               <span class="b-corner b-tr" aria-hidden="true"></span>
               <p class="bento-label">Subscribers Scaled</p>
               <p class="bento-value">100K+</p>
-              <p class="bento-caption">Measured outcome: Scaled publishing velocity and audience growth by automating vertical reel generation via a custom Remotion/Node.js pipeline, eliminating 40+ hours of manual post-production bottlenecks per week.</p>
+              <p class="bento-caption">Built an automated media generator using React and Remotion; it produces clips, subtitles, and social copy for a podcast with ~100K subscribers, eliminating manual timeline editing for 50+ episodes.</p>
               <div class="bento-bar" aria-hidden="true"></div>
             </div>
             <div class="bento-card" data-inview>
@@ -213,8 +210,8 @@
                     <path d="M5 12V18C5 19.6569 8.13401 21 12 21C15.866 21 19 19.6569 19 18V12" stroke="currentColor" stroke-width="1.5"/>
                   </svg>
                 </div>
-                <h4>Data Extraction &amp; Logistics</h4>
-                <p>I bypass manual data entry by pushing raw transcripts and documentation through Google NotebookLM and Gemini 1.5 Pro. This extracts structured JSON data and identifies optimal cut points for video.</p>
+                <h4>Data Logistics</h4>
+                <p>I design relational schemas and API contracts upfront in Notion, mapping data flows and timing logic before any code is written to ensure predictable scaling.</p>
               </article>
 
               <article class="orchestration-card" data-inview>
@@ -227,8 +224,8 @@
                     <path d="M9 16.5C9.8 15.5 10.85 15 12 15C13.15 15 14.2 15.5 15 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                   </svg>
                 </div>
-                <h4>System Architecture (Notion)</h4>
-                <p>Chaos kills scale. Every automated pipeline begins as a strict relational database in Notion. I map out the exact data schemas, API routes, and timing logic before writing a single line of code.</p>
+                <h4>AI-Assisted Orchestration</h4>
+                <p>I leverage Copilot and Claude to rapidly scaffold React/Remotion components, then hand-write the integration logic and Playwright tests for production deployment.</p>
               </article>
 
               <article class="orchestration-card" data-inview>
@@ -239,8 +236,8 @@
                     <path d="M14 5L10 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                   </svg>
                 </div>
-                <h4>AI-Assisted Engineering</h4>
-                <p>I use LLMs as my compiler. By feeding my Notion schemas into Claude and Copilot, I rapidly prototype and deploy React and Remotion components. I act as the orchestrator, debugging the connective tissue and scaling the output.</p>
+                <h4>Data Extraction</h4>
+                <p>I implemented a Node.js service workflow that processes raw transcripts via NotebookLM and Gemini APIs, extracting structured JSON payloads for the render engine.</p>
               </article>
             </div>
           </section>
@@ -511,8 +508,8 @@
         </div>
         <div class="footer-links">
           <a href="lab.html" class="social-link">The Lab</a>
-          <a href="https://www.linkedin.com/in/jacob-britten-a3b52026/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
-          <a href="https://www.instagram.com/jakefzbritten" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+          <a href="#work-preview" class="social-link">Work</a>
+          <a href="#consult" class="social-link">Contact</a>
         </div>
         <p class="footer-copy">&copy; 2026 Jacob Britten. All rights reserved.</p>
       </div>
