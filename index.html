@@ -3,521 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob Britten | Content Systems &amp; AI Pipelines</title>
+    <title>Jacob Britten | Systems Architect</title>
+    <meta
+      name="description"
+      content="Systems architect building React and Remotion automation workflows that reduce post-production time and scale media output."
+    />
 
-    <!-- Fonts: distinctive pair, NOT Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
-
-    <meta name="description" content="Jacob Britten — I build automated content pipelines, React/Remotion video tools, and AI workflows that save teams time and money. MBA & M.Tech." />
-    <meta property="og:title" content="Jacob Britten | Content Systems & AI Pipelines" />
-    <meta property="og:description" content="I build the tools, code, and AI workflows that handle the heavy lifting — so your team can focus on making good content." />
-    <meta property="og:image" content="images/notion-pipeline.png" />
-    <meta property="og:url" content="https://jacobbritten.com" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300FFC8' width='100' height='100' rx='16'/><text x='50' y='54' font-size='58' fill='%230B0D14' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>J</text></svg>" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300FFC8' width='100' height='100' rx='16'/><text x='50' y='54' font-size='58' fill='%230B0D14' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>J</text></svg>"
+    />
   </head>
-  <body class="brutalist-lite">
-    <a href="#main" class="skip-link">Skip to content</a>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ── NAVIGATION ── -->
-    <nav class="navbar" id="navbar" aria-label="Main navigation">
-      <div class="container nav-container">
-        <a href="index.html" class="logo">JACOB BRITTEN</a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#work-preview">Work</a></li>
-          <li><a href="lab.html">Lab</a></li>
-          <li><a href="#metrics">Metrics</a></li>
-          <li><a href="#infrastructure">Stack</a></li>
-          <li><a href="#profile">About</a></li>
-          <li><a href="#consult">Contact</a></li>
-          <li><a class="btn resume-btn" href="#profile">Resume</a></li>
-        </ul>
-        <button type="button" class="menu-toggle" id="menu-toggle"
-                aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
+    <site-nav current="home"></site-nav>
 
     <main id="main">
-
-      <!-- §1 HERO -->
-      <section class="hero hero-section">
-        <div class="container hero-content">
-          <div class="hero-grid">
-            <div class="hero-left">
-              <div class="eyebrow-wrap" data-animate>
-                <span class="status-dot" aria-hidden="true"></span>
-                <span class="eyebrow-text">System Architecture</span>
-              </div>
-
-              <h1 class="hero-title" data-animate data-delay="1">I build automated media infrastructure.</h1>
-
-              <p class="hero-subtitle" data-animate data-delay="2">I engineer Remotion and Node.js pipelines that ingest raw footage, apply programmatic edits, and render platform-ready video assets at scale. With a background in high-volume enterprise real estate media, I build the infrastructure that replaces manual editing.</p>
-
-              <div class="video-outer" data-animate data-delay="3">
-                <div class="video-glow" aria-hidden="true"></div>
-                <div class="video-wrap">
-                  <span class="v-corner v-tl" aria-hidden="true"></span>
-                  <span class="v-corner v-tr" aria-hidden="true"></span>
-                  <span class="v-corner v-bl" aria-hidden="true"></span>
-                  <span class="v-corner v-br" aria-hidden="true"></span>
-                  <video
-                    class="hero-showcase-img"
-                    src="video/showreel.mp4"
-                    autoplay muted loop playsinline
-                    aria-label="Showreel: content pipelines, React/Remotion builds, and AI workflow demos"
-                  ></video>
-                  <div class="video-hud" aria-hidden="true">
-                    <span>REACT / REMOTION / WORKFLOW AUTOMATION</span>
-                    <a href="work.html" class="hud-cta">VIEW CASE STUDIES ↗</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero-right" data-animate data-delay="2">
-              <div class="hero-slider" aria-label="Featured project slideshow">
-                <div class="slide active">
-                  <img src="images/cropcheck-1.jpg" alt="Crop Check UI" style="object-fit: cover; object-position: top center; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
-                </div>
-                <div class="slide">
-                  <img src="images/instagram-420.jpg" alt="Viral Reels 1.4M Views" style="object-fit: cover; object-position: 50% 65%; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
-                </div>
-                <div class="slide">
-                  <img src="images/youtube-analytics-422.jpg" alt="31K Views Analytics Spike" style="object-fit: cover; object-position: 50% 15%; width: 100%; height: 100%; position: absolute; inset: 0;" loading="lazy" />
-                </div>
-
-                <button class="slider-btn prev" aria-label="Previous image">❮</button>
-                <button class="slider-btn next" aria-label="Next image">❯</button>
-
-                <div class="slider-dots">
-                  <span class="dot active" data-index="0"></span>
-                  <span class="dot" data-index="1"></span>
-                  <span class="dot" data-index="2"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="scroll-indicator" aria-hidden="true">
-            <div class="scroll-line"></div>
-            <span class="scroll-label">SCROLL</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- §2 CASE STUDIES PREVIEW -->
-      <section class="cases-preview" id="work-preview" aria-label="Case studies preview">
-        <div class="container">
-          <div class="section-label section-label--tight">
-            <span class="label-line" aria-hidden="true"></span>
-            <span>System Architecture</span>
-          </div>
-          <h2 class="section-headline" data-inview>
-            WHAT I<br><span class="headline-dim">BUILD.</span>
-          </h2>
-          <div class="cases-grid">
-
-            <article class="card card--case case-card--blueprint" data-inview>
-              <img src="images/remotion-schema.jpg" style="object-position: top left;" alt="TypeScript Zod Schema Config" loading="lazy">
-              <div class="card__body">
-                <p class="infra-tag">The Blueprint / Engine</p>
-                <h3 class="card__title">Schema-First Remotion Architecture</h3>
-                <p class="card__copy">Strict config contracts, typed scene inputs, and render-safe orchestration before a frame gets exported.</p>
-                <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
-              </div>
-            </article>
-
-            <article class="card card--case case-card--logic" data-inview>
-              <img src="images/Genera-Reels.jpg" style="object-position: top left;" alt="React Remotion Rendering Code" loading="lazy">
-              <div class="card__body">
-                <p class="infra-tag">The Logic</p>
-                <h3 class="card__title">Genera-Reels Rendering Pipeline</h3>
-                <p class="card__copy">React composition logic, timing systems, and reusable rendering blocks that turn structured data into repeatable output.</p>
-                <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
-              </div>
-            </article>
-
-            <article class="card card--case case-card--testing" data-inview>
-              <img src="images/youtube-retention-424.jpg" style="object-position: center;" alt="YouTube Retention Graph" loading="lazy">
-              <div class="card__body">
-                <p class="infra-tag">The Execution / Testing</p>
-                <h3 class="card__title">Retention and QA Signal</h3>
-                <p class="card__copy">Testing decisions against viewer behavior, validating what holds attention instead of guessing at pacing.</p>
-                <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
-              </div>
-            </article>
-
-            <article class="card card--case case-card--scale" data-inview>
-              <img src="images/youtube-analytics-422.jpg" style="object-position: 50% 15%;" alt="Analytics Spike" loading="lazy">
-              <div class="card__body">
-                <p class="infra-tag">The Scale / Metrics</p>
-                <h3 class="card__title">Audience Lift and Distribution Proof</h3>
-                <p class="card__copy">Analytics snapshots tied back to the systems layer: automation that produces measurable reach, throughput, and growth.</p>
-                <a href="https://github.com/fuzmaster" class="hud-cta" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- §3 METRICS BENTO -->
-      <section class="metrics-section" id="metrics" aria-label="Performance metrics">
-        <div class="container">
-          <div class="section-label">
-            <span class="label-line" aria-hidden="true"></span>
-            <span>Technical Capabilities</span>
-          </div>
-
-          <div class="bento-grid">
-            <div class="bento-card bento-card--hero" data-inview>
-              <span class="b-corner b-tl" aria-hidden="true"></span>
-              <span class="b-corner b-tr" aria-hidden="true"></span>
-              <p class="bento-label">Subscribers Scaled</p>
-              <p class="bento-value">100K+</p>
-              <p class="bento-caption">Built an automated media generator using React and Remotion; it produces clips, subtitles, and social copy for a podcast with ~100K subscribers, eliminating manual timeline editing for 50+ episodes.</p>
-              <div class="bento-bar" aria-hidden="true"></div>
-            </div>
-            <div class="bento-card" data-inview>
-              <span class="b-corner b-tl" aria-hidden="true"></span>
-              <span class="b-corner b-tr" aria-hidden="true"></span>
-              <p class="bento-label">Faster Post-Production</p>
-              <p class="bento-value">40%</p>
-              <div class="bento-bar" aria-hidden="true"></div>
-            </div>
-            <div class="bento-card" data-inview>
-              <span class="b-corner b-tl" aria-hidden="true"></span>
-              <span class="b-corner b-tr" aria-hidden="true"></span>
-              <p class="bento-label">Full Episodes Produced &amp; Shipped</p>
-              <p class="bento-value">50+</p>
-              <div class="bento-bar" aria-hidden="true"></div>
-            </div>
-          </div>
-
-          <section class="orchestration-layer" aria-label="The Orchestration Layer">
-            <h3 class="orchestration-title" data-inview>The Orchestration Layer</h3>
-            <div class="orchestration-grid">
-              <article class="orchestration-card" data-inview>
-                <div class="orchestration-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M5 6V12C5 13.6569 8.13401 15 12 15C15.866 15 19 13.6569 19 12V6" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M5 12V18C5 19.6569 8.13401 21 12 21C15.866 21 19 19.6569 19 18V12" stroke="currentColor" stroke-width="1.5"/>
-                  </svg>
-                </div>
-                <h4>Data Logistics</h4>
-                <p>I design relational schemas and API contracts upfront in Notion, mapping data flows and timing logic before any code is written to ensure predictable scaling.</p>
-              </article>
-
-              <article class="orchestration-card" data-inview>
-                <div class="orchestration-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4C8.13401 4 5 7.13401 5 11V12.5C5 15.5376 6.93264 18.1237 9.63604 19.082" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M12 4C15.866 4 19 7.13401 19 11V12.5C19 15.5376 17.0674 18.1237 14.364 19.082" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M9 11.25C9 10.5596 9.55964 10 10.25 10C10.9404 10 11.5 10.5596 11.5 11.25C11.5 11.9404 10.9404 12.5 10.25 12.5C9.55964 12.5 9 11.9404 9 11.25Z" fill="currentColor"/>
-                    <path d="M12.5 11.25C12.5 10.5596 13.0596 10 13.75 10C14.4404 10 15 10.5596 15 11.25C15 11.9404 14.4404 12.5 13.75 12.5C13.0596 12.5 12.5 11.9404 12.5 11.25Z" fill="currentColor"/>
-                    <path d="M9 16.5C9.8 15.5 10.85 15 12 15C13.15 15 14.2 15.5 15 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                  </svg>
-                </div>
-                <h4>AI-Assisted Orchestration</h4>
-                <p>I leverage Copilot and Claude to rapidly scaffold React/Remotion components, then hand-write the integration logic and Playwright tests for production deployment.</p>
-              </article>
-
-              <article class="orchestration-card" data-inview>
-                <div class="orchestration-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 8L4 12L8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 8L20 12L16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14 5L10 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                  </svg>
-                </div>
-                <h4>Data Extraction</h4>
-                <p>I implemented a Node.js service workflow that processes raw transcripts via NotebookLM and Gemini APIs, extracting structured JSON payloads for the render engine.</p>
-              </article>
-            </div>
-          </section>
-
-          <div class="stat-bar" data-inview>
-            <div class="stat-item">
-              <p class="stat-value">MBA</p>
-              <p class="stat-label">Graduate Business</p>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-item">
-              <p class="stat-value">M.Tech</p>
-              <p class="stat-label">Digital Media</p>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-item">
-              <p class="stat-value">Pt.107</p>
-              <p class="stat-label">FAA Commercial UAV</p>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-item">
-              <p class="stat-value">8+</p>
-              <p class="stat-label">Years in Production Ops</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- §4 INFRASTRUCTURE -->
-      <section class="infra-section" id="infrastructure" aria-label="Infrastructure stack">
-        <div class="container">
-          <div class="section-label">
-            <span class="label-line" aria-hidden="true"></span>
-            <span>Deployed Infrastructure</span>
-          </div>
-
-          <h2 class="section-headline" data-inview>
-            HOW I<br>
-            <span class="headline-dim">WORK.</span>
-          </h2>
-
-          <!-- Row 1 -->
-          <div class="infra-row" data-inview>
-            <span class="pipeline-counter" aria-hidden="true">01</span>
-            <div class="infra-text">
-              <p class="infra-tag">Broadcast Infrastructure</p>
-              <h3 class="infra-heading">Live Broadcast Production</h3>
-              <p class="infra-body">
-                I set up and run multi-camera live shows on Blackmagic gear. I handle the switching,
-                the signal routing, and the redundancy so nothing drops during a live stream. One show
-                I built from scratch now reaches 11,000+ viewers per episode.
-              </p>
-              <ul class="spec-tags">
-                <li>Blackmagic ATEM</li>
-                <li>DaVinci Resolve</li>
-                <li>Multi-cam Logic</li>
-                <li>SDI / HDMI Signal Chain</li>
-              </ul>
-            </div>
-            <div class="infra-image-wrap">
-              <!--
-                IMAGE: Extra/Camera1.jpg
-                Real photo of Blackmagic studio camera in broadcast environment.
-              -->
-                  <img src="images/Extra/Camera1.jpg"
-                   alt="Blackmagic studio camera rig in live broadcast environment"
-                   loading="lazy" class="infra-photo" width="1200" height="900" />
-              <span class="infra-image-label">BROADCAST_RIG.001</span>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="infra-row infra-row--reverse" data-inview>
-            <span class="pipeline-counter" aria-hidden="true">02</span>
-            <div class="infra-image-wrap infra-image-wrap--svg">
-              <!--
-                IMAGE: youtube-growth.svg
-                Clean vector chart showing 100K+ subs and 12.6K weekly views.
-                Should be hand-crafted SVG with the --cyan accent color.
-              -->
-              <img src="images/youtube-growth.svg"
-                   alt="YouTube analytics showing 100K+ subscribers and 12.6K weekly views from automated content pipeline"
-                   loading="lazy" class="infra-photo infra-photo--svg" width="800" height="400" />
-              <span class="infra-image-label">PIPELINE_OUTPUT.002</span>
-            </div>
-            <div class="infra-text">
-              <p class="infra-tag">Programmatic Post-Production</p>
-              <h3 class="infra-heading">Code-First Video Pipelines</h3>
-              <p class="infra-body">
-                I write React and Remotion code that turns raw data into finished videos automatically.
-                No more dragging clips around in After Effects. Feed it a transcript and a JSON config,
-                and it spits out a full social media kit. Cut post-production time by 40%.
-              </p>
-              <ul class="spec-tags">
-                <li>React / Remotion</li>
-                <li>After Effects Automation</li>
-                <li>JSON Data Schemas</li>
-                <li>FFmpeg Pipelines</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="infra-row" data-inview>
-            <span class="pipeline-counter" aria-hidden="true">03</span>
-            <div class="infra-text">
-              <p class="infra-tag">AI Automation Orchestration</p>
-              <h3 class="infra-heading">AI Prompt Chains</h3>
-              <p class="infra-body">
-                I run raw audio through a multi-model pipeline — NotebookLM for data ingestion,
-                Gemini for editorial critique, Claude for social copy, ChatGPT for final packaging.
-                The output is a full distribution kit: SEO descriptions, chapter markers, social posts,
-                and Remotion data files. No manual writing.
-              </p>
-              <ul class="spec-tags">
-                <li>Multi-Model LLM Architecture</li>
-                <li>Claude / Gemini / ChatGPT</li>
-                <li>Automated Social Kits</li>
-                <li>Zero Manual Copy</li>
-              </ul>
-            </div>
-            <div class="infra-image-wrap infra-image-wrap--svg">
-              <!--
-                IMAGE: ai-pipeline.svg
-                Vector diagram: NotebookLM → Gemini → Claude → ChatGPT flow.
-                Clean, minimal, uses --cyan for connectors.
-              -->
-              <img src="images/ai-pipeline.svg"
-                   alt="Multi-model AI prompt pipeline: NotebookLM to Gemini to Claude to ChatGPT"
-                   loading="lazy" class="infra-photo infra-photo--svg" width="1000" height="200" />
-              <span class="infra-image-label">AI_PIPELINE.003</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- §5 ENDORSEMENTS -->
-      <section class="endorsements-section section-padding" aria-label="Executive endorsements">
-        <div class="container">
-          <div class="section-label">
-            <span class="label-line" aria-hidden="true"></span>
-              <span>Stakeholder Endorsements</span>
-          </div>
-          <h2 class="section-headline" data-inview>PEOPLE I'VE <span class="accent">WORKED WITH</span></h2>
-          <div class="value-cards">
-            <div class="card testimonial-card" data-inview>
-              <p class="testimonial-quote">"Jacob has a passion for making projects seamless and creating workflows to make everyone's lives easier. He handles large amounts of projects at once with ease and can easily take on new tasks."</p>
-              <h3 class="testimonial-name">Brandon Farrell</h3>
-              <p class="testimonial-title">Videographer, Lamacchia Realty</p>
-            </div>
-            <div class="card testimonial-card" data-inview>
-              <p class="testimonial-quote">"He works so quickly and adds his own touch to his work — not only do you get it done fast, you also get it done better than you could have imagined."</p>
-              <h3 class="testimonial-name">Lindsay Favazza</h3>
-              <p class="testimonial-title">VP of Marketing, Lamacchia Realty</p>
-            </div>
-            <div class="card testimonial-card" data-inview>
-              <p class="testimonial-quote">"Jacob is an accomplished video editor and drone pilot. He recently did a drone shoot for one of my listings and did a fabulous job without any direction. Highly recommended."</p>
-              <h3 class="testimonial-name">Gary Kelley</h3>
-              <p class="testimonial-title">Broker/Owner, Residential Real Estate</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- §6 PROFILE -->
-      <section id="profile" class="section-padding" aria-label="Director profile">
-        <div class="container split-layout">
-          <div class="profile-image" data-inview>
-            <!--
-              IMAGE: Profile.jpg
-              Profile image for the About section.
-            -->
-            <img src="images/Profile.jpg"
-              alt="Jacob Britten — content systems architect and media operations director"
-              class="headshot" width="800" height="800" loading="lazy" />
-          </div>
-          <div class="profile-text" data-inview>
-            <div class="section-label section-label--snug">
-              <span class="label-line" aria-hidden="true"></span>
-                <span>Professional Profile</span>
-            </div>
-            <h2>STARTED AS A CREATOR.<br><span class="accent">NOW I BUILD THE TOOLS.</span></h2>
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <section-label text="Systems Architecture"></section-label>
+            <h1 id="hero-title">I build production media systems that remove editing bottlenecks.</h1>
             <p>
-              While leading post-production operations, I measured that over 60% of editing time was lost to repetitive formatting and asset management. To solve this, I architected React and Remotion pipelines that reduced delivery time by automating the rendering layer.
+              Cut post-production time by 40% and automated 50+ episodes for a
+              100K+ subscriber podcast using React + Remotion render pipelines,
+              transcript parsing services, and test-driven deployment workflows.
             </p>
-            <p>
-              Now I write code (React, Remotion, Node), design AI workflows, and build the
-              automated pipelines that let small teams ship like big ones. I have an MBA and
-              a Master's in Digital Media, but what matters more is that I actually build things.
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="projects.html">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+            <ul class="hero-meta" aria-label="Key delivery outcomes">
+              <li>40% faster post-production turnaround</li>
+              <li>50+ episodes automated end-to-end</li>
+              <li>100K+ subscriber distribution context</li>
+            </ul>
+          </div>
+
+          <div class="hero-media">
+            <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+              <img
+                src="images/youtube-analytics-422.jpg"
+                alt="Analytics dashboard showing audience growth trend"
+                loading="lazy"
+                decoding="async"
+              />
+              <button
+                type="button"
+                class="play-overlay"
+                id="open-video"
+                aria-label="Play systems demo video"
+              >
+                <span class="play-icon" aria-hidden="true">▶</span>
+                Play Demo
+              </button>
+            </div>
+            <p class="media-caption">
+              Demo: code-driven media generation pipeline with schema validation,
+              subtitle automation, and publish-ready exports.
             </p>
-            <div class="tech-stack">
-              <h3>WHAT I USE:</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <section-label text="About"></section-label>
+          <h2 id="about-title">Architecture approach: contract-first, test-first, measurable outputs.</h2>
+          <p class="section-intro">
+            I model systems before implementation, use AI tools for scaffolding,
+            and ship production logic with typed contracts and integration tests.
+            Metrics and infrastructure are consolidated below for full technical context.
+          </p>
+
+          <div class="metrics-grid" role="list" aria-label="Performance metrics">
+            <metric-card label="Subscribers Supported" value="100K+" detail="Automated content pipeline for active high-volume channel."></metric-card>
+            <metric-card label="Manual Time Reduction" value="40%" detail="Removed repetitive timeline editing with render orchestration."></metric-card>
+            <metric-card label="Episodes Automated" value="50+" detail="Delivered render-ready clips, captions, and social output packages."></metric-card>
+          </div>
+
+          <div class="about-split">
+            <article class="stack-card" aria-labelledby="stack-title">
+              <h3 id="stack-title">Stack and deployment profile</h3>
               <ul>
-                <li>React / Remotion / TypeScript</li>
-                <li>AI Prompt Chains &amp; LLM Workflows</li>
-                <li>Node.js / FFmpeg / CLI Tooling</li>
-                <li>Blackmagic ATEM &amp; Live Production</li>
-                <li>Adobe Premiere / After Effects / Lightroom</li>
+                <li>React + Remotion composition layer</li>
+                <li>Node.js orchestration and transcript processing</li>
+                <li>Zod schemas for input and render validation</li>
+                <li>Playwright tests for UI and workflow verification</li>
+                <li>Vercel deployment with serverless integrations</li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            </article>
 
-      <!-- §7 CTA -->
-      <section id="consult" class="executive-brief" aria-label="Contact">
-        <div class="container">
-          <div class="brief-divider" aria-hidden="true"></div>
-          <div class="section-label">
-            <span class="label-line" aria-hidden="true"></span>
-              <span>Executive Brief</span>
-          </div>
-
-          <div class="brief-grid">
-            <div class="brief-left" data-inview>
-              <h2 class="brief-headline">
-                LET'S<br>
-                <span class="accent">BUILD</span><br>
-                SOMETHING.
-              </h2>
-              <p class="brief-body">
-                With eight years in media operations and graduate training in digital systems (MBA/M.Tech), I architect and deploy video automation services used by enterprise real estate firms and podcasts with 100k+ subscribers.
+            <article class="stack-card" aria-labelledby="workflow-title">
+              <h3 id="workflow-title">Execution workflow</h3>
+              <p>
+                1) Define relational data schema and API contracts.
+                2) Scaffold component surfaces with Copilot/Claude.
+                3) Implement integration logic manually.
+                4) Validate with Playwright and contract checks.
+                5) Deploy via CI and monitor output quality.
               </p>
-              <ul class="credential-list">
-                <li><span class="cred-icon" aria-hidden="true">◈</span>MBA — Business Strategy &amp; Operations</li>
-                <li><span class="cred-icon" aria-hidden="true">◈</span>M.Tech — Digital Media Systems</li>
-                <li><span class="cred-icon" aria-hidden="true">◈</span>FAA Part 107 — Commercial UAS</li>
-              </ul>
-            </div>
-
-            <div class="brief-right" data-inview>
-              <div class="cta-card">
-                <p class="cta-eyebrow">Open to full-time, contract, and project-based roles</p>
-                <p class="cta-body-text">
-                  Got a content problem that needs a systems solution? Let's talk.
-                </p>
-                <div class="cta-actions">
-                  <a href="https://calendly.com/jacobbritten" target="_blank" rel="noopener noreferrer" class="btn cta-primary-btn">
-                    Book a call ↗
-                  </a>
-                  <div class="cta-secondary-links">
-                    <a href="https://www.linkedin.com/in/jacob-britten-a3b52026/"
-                       target="_blank" rel="noopener noreferrer"
-                       class="social-icon-btn" aria-label="LinkedIn profile">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                      LinkedIn
-                    </a>
-                    <a href="mailto:jacob@jacobbritten.com"
-                       class="social-icon-btn" aria-label="Send email">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                      Email
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
+      <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <section-label text="References"></section-label>
+          <h2 id="testimonials-title">Delivery quality from operators and stakeholders</h2>
+          <div class="testimonials-grid">
+            <testimonial-card
+              quote="Jacob creates workflows that make complex projects easier to execute and scale."
+              name="Brandon Farrell"
+              role="Videographer, Lamacchia Realty"
+            ></testimonial-card>
+            <testimonial-card
+              quote="He delivers quickly while improving process quality and final output consistency."
+              name="Lindsay Favazza"
+              role="VP of Marketing, Lamacchia Realty"
+            ></testimonial-card>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-wrap">
+          <section-label text="Contact"></section-label>
+          <h2 id="contact-title">Discuss an automation build or systems role</h2>
+          <p class="section-intro">
+            Use the form to send project context. The message is posted to a serverless endpoint
+            and returns structured success/failure feedback.
+          </p>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn btn-primary" aria-label="Send contact message">
+              Send Message
+            </button>
+            <p id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-inner">
-        <div class="footer-left">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span class="footer-id">jacob_britten — content_systems &amp; ai_pipelines</span>
-        </div>
+        <p>Jacob Britten - Systems Architect</p>
         <div class="footer-links">
-          <a href="lab.html" class="social-link">The Lab</a>
-          <a href="#work-preview" class="social-link">Work</a>
-          <a href="#consult" class="social-link">Contact</a>
+          <a href="projects.html">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-        <p class="footer-copy">&copy; 2026 Jacob Britten. All rights reserved.</p>
       </div>
     </footer>
 
-    <!-- GSAP + ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <div class="video-modal" id="video-modal" aria-hidden="true" role="dialog" aria-label="Demo video player">
+      <div class="video-dialog">
+        <button type="button" class="close-modal" id="close-video" aria-label="Close video">×</button>
+        <video id="demo-video" controls preload="none" poster="images/youtube-analytics-422.jpg">
+          <source src="video/showreel.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script src="components.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

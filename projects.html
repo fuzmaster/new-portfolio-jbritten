@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Jacob Britten</title>
+    <meta
+      name="description"
+      content="Unified portfolio projects across production systems, automation tooling, and experimentation lab builds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <site-nav current="projects"></site-nav>
+
+    <main id="main" class="projects-main">
+      <section class="section">
+        <div class="container">
+          <section-label text="Projects"></section-label>
+          <h1 class="projects-title">Work and lab systems in one surface.</h1>
+          <p class="section-intro projects-intro">
+            Production implementations, internal tools, and QA utilities grouped by
+            measurable impact rather than by page type.
+          </p>
+
+          <div class="project-grid" role="list" aria-label="Projects list">
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+                <img src="images/remotion-schema.jpg" alt="Remotion component schema and timeline composition" loading="lazy" decoding="async" />
+              </div>
+              <h2>Podcast Automation Pipeline</h2>
+              <p>
+                React + Remotion render architecture that transforms transcript data
+                into captioned clips and social variants with typed schema validation.
+              </p>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+                <img src="images/youtube-retention-424.jpg" alt="Retention graph with segment performance" loading="lazy" decoding="async" />
+              </div>
+              <h2>Retention Signal Dashboard</h2>
+              <p>
+                Structured reporting layer that maps watch-time drop-offs to specific
+                edit decisions for iterative episode optimization.
+              </p>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: top;">
+                <img src="images/cropcheck-1.jpg" alt="Asset crop preview matrix for social channels" loading="lazy" decoding="async" />
+              </div>
+              <h2>Crop Check QA Utility</h2>
+              <p>
+                Platform-safe area preview system with deterministic screenshot checks
+                to catch layout breakage before publishing.
+              </p>
+              <a href="https://github.com/fuzmaster/social-preview" target="_blank" rel="noopener noreferrer">View Source</a>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+                <img src="images/Genera-Reels.jpg" alt="Code editor and generated vertical reels" loading="lazy" decoding="async" />
+              </div>
+              <h2>Genera-Reels Engine</h2>
+              <p>
+                Template-based short-form video rendering tool that consumes payload
+                inputs and emits batch reels with repeatable output quality.
+              </p>
+              <a href="https://github.com/fuzmaster/max-reels-project" target="_blank" rel="noopener noreferrer">View Source</a>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+                <img src="images/keep7.png" alt="Probability simulator interface" loading="lazy" decoding="async" />
+              </div>
+              <h2>Keep7 Probability Simulator</h2>
+              <p>
+                Browser-based combinatorial analysis tool for opening-hand consistency
+                and mulligan decision support.
+              </p>
+              <a href="https://github.com/fuzmaster/keep7" target="_blank" rel="noopener noreferrer">View Source</a>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <div class="image-frame" style="--ratio: 16/10; --img-pos: center;">
+                <img src="images/bjack.png" alt="Reducer-based blackjack game state transitions" loading="lazy" decoding="async" />
+              </div>
+              <h2>Blackjack State Engine</h2>
+              <p>
+                Reducer-driven game state machine built to enforce explicit transition
+                rules and avoid hidden state drift bugs.
+              </p>
+              <a href="https://github.com/fuzmaster/MVP-Social-Chaos-Engine" target="_blank" rel="noopener noreferrer">View Source</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Jacob Britten - Systems Architect</p>
+        <div class="footer-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="lab.html">Legacy Lab</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
